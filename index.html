@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link href="./src/output.css" rel="stylesheet">
+  <title>Responsive Portfolio</title>
+</head>
+
+<body class="bg-neutral-900">
+  <nav class="flex flex-row justify-between items-center bg-blue-600 h-auto w-full py-4 px-2 ">
+    <p class="text-amber-50 text-4xl font-bold font-sans text-shadow-md">resuvik...</p>
+    <ul class="sm:flex sm:flex-row sm:justify-around sm:items-center sm:bg-amber-0 hidden " id="option">
+      <li class="mr-6 text-amber-50 font-medium "><a href="#homePage">Home</a></li>
+      <li class="mr-6 text-amber-50 font-medium"><a href="">Skills</a></li>
+      <li class="mr-6 text-amber-50 font-medium"><a href="">Experiences</a></li>
+      <li class="mr-6 text-amber-50 font-medium"><a href="">Educations</a></li>
+      <li class="mr-6 text-amber-50 font-medium"><a href="">Contact</a></li>
+
+    </ul>
+    <div class="sm:hidden "><a href="#option"><img src="/icons8-xbox-menu-50.png" class="w-8 h-auto"></a></div>
+  </nav>
+  <div id="homePage"
+    class="sm:flex sm:flex-row sm:justify-center sm:items-center flex flex-col-reverse justify-center items-center my-5 mx-10">
+    <div class="px-4 flex flex-col justify-center items-center">
+      <p class=" text-amber-50 text-2xl font-medium mb-1.5">Hi,Myself</p>
+      <p class=" text-amber-50 text-4xl font-bold font-serif mb-1.5">Souvik Purkait</p>
+      <p class=" text-amber-50 text-2xl font-medium mb-1.5">I'm <span id="role" class="text-blue-400"></span></p>
+      <p class="text-amber-50 text-xl text-justify">To secure a responsible career
+        opportunity in an IT company where
+        I can fully utilize my training and
+        skills to contribute to the success of
+        the team and gain practical
+        experience.
+      </p>
+      <div class="flex flex-row justify-between items-center my-3">
+        <a href="https://github.com/Souvik-code-ai" target="__main__"><div><img src="https://icones.pro/wp-content/uploads/2021/06/icone-github-noir.png" class="h-auto w-13 rounded-full"/></div></a>
+        <a href="https://www.linkedin.com/in/souvik-purkait-3b5a9727b/" target="__main__"><div><img src="/linkedinLogo.png" class="h-auto w-13 rounded-full"/></div></a>
+      </div>
+      <div class="flex flex-row justify-around items-center ">
+        <a href="/resume.pdf" target="__main__" ><div class="rounded-xl w-30 bg-blue-600 text-center h-auto text-amber-50 hover:text-blue-600 hover:bg-amber-50 mr-1">Download CV</div></a>
+        <a href="#" target="__main__" class="rounded-xl w-30 bg-blue-600 text-center h-auto text-amber-50  hover:text-blue-600 hover:bg-amber-50"><div>Hire me</div></a>
+      </div>
+    </div>
+    <div><img src="/profile.jpeg" class="h-auto w-2xl overflow-hidden rounded-3xl" /></div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="/script.js"></script>
+</body>
+
+</html>
