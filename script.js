@@ -5,3 +5,7 @@ var roleSwitch=new Typed("#role",{
     backDelay:100,
     loop:true
 })
+function showSideBar(){
+    let showBar=document.querySelector("#option");
+    showBar.style.display="block";
+}

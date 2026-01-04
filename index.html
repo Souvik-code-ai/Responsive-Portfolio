@@ -9,26 +9,26 @@
   <title>Responsive Portfolio</title>
 </head>
 
-<body class="bg-neutral-900">
-  <nav class="flex flex-row justify-between items-center bg-blue-600 h-auto w-full py-4 px-2 ">
-    <p class="text-amber-50 text-4xl font-bold font-sans text-shadow-md">resuvik...</p>
+<body class="bg-linear-to-br from-blue-50 via-white to-purple-50">
+  <nav class=" flex flex-row justify-between items-center h-auto w-full py-4 px-3 fixed top-0 left-0 right-0 bg-linear-to-br from-blue-50 via-white to-purple-50">
+    <p class="bg-linear-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent text-4xl font-bold font-sans text-shadow-md">resuvik...</p>
     <ul class="sm:flex sm:flex-row sm:justify-around sm:items-center sm:bg-amber-0 hidden " id="option">
-      <li class="mr-6 text-amber-50 font-medium "><a href="#homePage">Home</a></li>
-      <li class="mr-6 text-amber-50 font-medium"><a href="#skillsPage">Skills</a></li>
-      <li class="mr-6 text-amber-50 font-medium"><a href="">Experiences</a></li>
-      <li class="mr-6 text-amber-50 font-medium"><a href="">Educations</a></li>
-      <li class="mr-6 text-amber-50 font-medium"><a href="">Contact</a></li>
+      <li class="mr-6 text-gray-700 hover:text-blue-600  font-medium "><a href="#homePage">Home</a></li>
+      <li class="mr-6 text-gray-700 hover:text-blue-600 font-medium"><a href="#skillsPage">Skills</a></li>
+      <li class="mr-6 text-gray-700 hover:text-blue-600  font-medium"><a href="#experiencePage">Experiences</a></li>
+      <li class="mr-6 text-gray-700 hover:text-blue-600  font-medium"><a href="#educationsPage">Educations</a></li>
+      <li class="mr-6 text-gray-700 hover:text-blue-600  font-medium"><a href="#contactPage">Contact</a></li>
 
     </ul>
-    <div class="sm:hidden "><a href="#option"><img src="/icons8-xbox-menu-50.png" class="w-8 h-auto"></a></div>
+    <div class="sm:hidden " onclick=showSideBar()><a href="#option"><img src="/icons8-xbox-menu-50.png" class="w-8 h-auto"></a></div>
   </nav>
   <div id="homePage"
-    class="sm:flex sm:flex-row sm:justify-center sm:items-center flex flex-col-reverse justify-center items-center my-5 mx-10">
+    class=" md:flex-row md:justify-center md:items-center flex flex-col-reverse justify-center items-center my-8 mx-10 py-20 bg-linear-to-br from-blue-50 via-white to-purple-50">
     <div class="px-4 flex flex-col justify-center items-center">
-      <p class=" text-amber-50 text-2xl font-medium mb-1.5">Hi,Myself</p>
-      <p class=" text-amber-50 text-3xl font-bold font-serif mb-1.5">Souvik Purkait</p>
-      <p class=" text-amber-50 text-2xl font-medium mb-1.5">I'm a <span id="role" class="text-blue-400"></span></p>
-      <p class="text-amber-50 text-xl text-justify">To secure a responsible career
+      <p class="  text-gray-700 text-2xl font-medium mb-1.5">Hi,Myself</p>
+      <p class=" text-black text-4xl font-bold  mb-1.5">Souvik Purkait</p>
+      <p class="  text-gray-700 text-2xl font-medium mb-1.5">I'm a <span id="role" class="bg-linear-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent"></span></p>
+      <p class="text-gray-500 text-xl text-justify">To secure a responsible career
         opportunity in an IT company where
         I can fully utilize my training and
         skills to contribute to the success of
@@ -40,13 +40,180 @@
         <a href="https://www.linkedin.com/in/souvik-purkait-3b5a9727b/" target="__main__"><div><img src="/linkedinLogo.png" class="h-auto w-13 rounded-full bg-amber-50"/></div></a>
       </div>
       <div class="flex flex-row justify-around items-center ">
-        <a href="/resume.pdf" target="__main__" ><div class="rounded-xl w-30 bg-blue-600 text-center h-auto text-amber-50 hover:text-blue-600 hover:bg-amber-50 mr-1">Download CV</div></a>
-        <a href="#" target="__main__" class="rounded-xl w-30 bg-blue-600 text-center h-auto text-amber-50  hover:text-blue-600 hover:bg-amber-50"><div>Hire me</div></a>
+        <a href="/resume.pdf" target="__main__" ><div class="flex flex-row justify-center items-center rounded-xl w-30 bg-linear-to-br from-blue-500 to-purple-600  text-center h-9 text-amber-50 mr-1">Download CV</div></a>
+        <a href="#" target="__main__"><div class="flex flex-row justify-center items-center rounded-xl w-30 bg-linear-to-br from-blue-500 to-purple-600  text-center h-9 text-amber-50  ">Get In Touch</div></a>
       </div>
     </div>
     <div class=""><img src="/profile.jpeg" class="h-auto w-2xl overflow-hidden rounded-3xl" /></div>
   </div>
-  <div id="skillsPage"></div>
+  <div id="skillsPage" class="w-full h-auto flex flex-col justify-around items-center  py-20 bg-linear-to-br from-blue-50 via-white to-purple-50">
+    <div id="skillsHeading" class="flex flex-row justify-center items-center" ><h1 class="text-4xl font-bold ">Skills & Expertise</h1></div>
+    <div class="bg-linear-to-r from-blue-600 to-purple-600 w-30 h-1 flex flex-row justify-center items-center my-2"></div>
+    <div id="skills" class="flex flex-col justify-around items-center  h-auto md:flex-row md:justify-center md:items-center">
+      <div id="frontend" class="shadow-md shadow-gray-600 rounded-2xl  w-2xs h-65 border-2 px-2.5 py-4.5 sm:mx-2 my-2">
+        <div id="frontendLogo" class=" h-12 w-12 bg-linear-to-r from-blue-600 to-purple-600 rounded -xl"><img src="/ux-design.png" class="overflow-hidden h-full w-full"></div>
+        <div id="frontendTools" >
+          <div id="frontendHeading"><h1 class="text-black text-2xl font-medium">Frontend Development</h1></div>
+          <ul>
+            <li class="text-xl text-gray-500 mx-1.5">HTML</li>
+            <li class="text-xl text-gray-500 mx-1.5">CSS</li>
+            <li class="text-xl text-gray-500 mx-1.5">Javascript</li>
+            <li class="text-xl text-gray-500 mx-1.5">React</li>
+            <li class="text-xl text-gray-500 mx-1.5">Tailwind CSS</li>
+
+          </ul>
+        </div>
+      </div>
+      <div id="programmingLanguage" class="shadow-md shadow-gray-600 rounded-2xl  w-2xs h-65 border-2 px-2.5 py-4.5 mx-2 sm:mx-2 my-2 bg-linear-to-br from-blue-50 via-white to-purple-50">
+        <div id="programmingLogo" class=" h-12 w-12 bg-linear-to-r from-blue-600 to-purple-600 rounded -xl"><img src="/codingLogo.png" class="overflow-hidden h-full w-full"></div>
+        <div id="programmingTools">
+          <div id="programmingHeading"><h1 class="text-black text-2xl font-medium ">Programming Language</h1></div>
+          <ul>
+            <li class="text-xl text-gray-500 mx-1.5">C</li>
+            <li class="text-xl text-gray-500 mx-1.5">Python</li>
+            <li class="text-xl text-gray-500 mx-1.5">Javascript</li>
+          </ul>
+        </div>
+      </div>
+      <div id="tools" class="shadow-md shadow-gray-600 rounded-2xl h-65 border-2 w-2xs px-2.5 py-4.5 mx-2 sm:mx-2 my-2 "><div id="toolsLogo" class=" h-12 w-12 bg-linear-to-r from-blue-600 to-purple-600 rounded -xl"><img src="/toolsLogo.png" class="overflow-hidden h-full w-full"></div>
+        <div id="toolsTools">
+          <div id="toolsHeading"><h1 class="text-black text-2xl font-medium">Tools</h1></div>
+          <ul>
+            <li class="text-xl text-gray-500 mx-1.5">Git</li>
+            <li class="text-xl text-gray-500 mx-1.5">VsCode</li>
+            <li class="text-xl text-gray-500 mx-1.5">Vercel</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="experiencePage" class="w-full h-auto flex flex-col justify-around items-center  py-20 bg-linear-to-br from-blue-50 via-white to-purple-50">
+    <div id="experienceHeading" class="flex flex-row justify-center items-center" ><h1 class="text-4xl font-bold ">Experiences</h1></div>
+    <div class="bg-linear-to-r from-blue-600 to-purple-600 w-30 h-1 flex flex-row justify-center items-center my-2"></div>
+    <div id="experiences" class="flex flex-col justify-around items-center  h-auto md:flex-row md:justify-center md:items-center">
+      <div id="broadifi" class="shadow-md shadow-gray-600 rounded-2xl  w-90 h-auto border-2 px-2.5 py-4 sm:mx-2 my-2 flex flex-col justify-center ">
+        <div id="broadifiLogo" class=" h-58 w-full bg-linear-to-r from-blue-600 to-purple-600 rounded -xl border-2"><img src="/btlogo.jpg" class="overflow-hidden h-full w-full"></div>
+        <div id="broadifiPost" class="flex flex-row justify-between items-center">
+          <span class="text-xl  text-justify  text-black font-bold">Javascript Intern</span>
+          <span>6<sup>th</sup>Oct,25-6<sup>th</sup>Jan,26</span>
+        </div>
+        <div id="broadifiObjective" class="text-justify text-gray-500">Assist in developing and debugging web applications using
+JavaScript, collaborated on front-end features, and gained
+hands-on experience with modern frameworks and version
+control systems.</div>
+        <div id="broadifiSkills" class="flex flex-row justify-between items-center">
+          <div class="rounded-2xl  bg-linear-to-r from-blue-600 to-purple-600 text-amber-50 w-15 flex flex-row justify-center items-center">React</div>
+          <div class="rounded-2xl  bg-linear-to-r from-blue-600 to-purple-600 text-amber-50 w-25 flex flex-row justify-center items-center">Tailwind CSS</div>
+          <div class="rounded-2xl  bg-linear-to-r from-blue-600 to-purple-600 text-amber-50 w-20 flex flex-row justify-center items-center">Javascript</div>
+        </div>
+      </div>
+      <div id="broadifi" class="shadow-md shadow-gray-600 rounded-2xl  w-90 h-auto border-2 px-2.5 py-4 sm:mx-2 my-2 flex flex-col justify-center ">
+        <div id="broadifiLogo" class=" h-64 w-full bg-linear-to-r from-blue-600 to-purple-600 rounded -xl border-2"><img src="/cipherbyteLogo.jpg" class="overflow-hidden h-full w-full"></div>
+        <div id="broadifiPost" class="flex flex-row justify-between items-center">
+          <span class="text-xl  text-justify  text-black font-bold">Python Intern</span>
+          <span>Jun,24</span>
+        </div>
+        <div id="broadifiObjective" class="text-justify  text-gray-500">Developed and optimized Python scripts for automation and data
+processing tasks, improving efficiency and reducing manual effort.</div>
+        <div id="broadifiSkills" class="flex flex-row justify-around items-center">
+          <div class="rounded-2xl  bg-linear-to-r from-blue-600 to-purple-600 text-amber-50 w-15 flex flex-row justify-center items-center">Python</div>
+          <div class="rounded-2xl  bg-linear-to-r from-blue-600 to-purple-600 text-amber-50 w-30 flex flex-row justify-center items-center">Programming</div>
+        </div>
+      </div>
+      <!-- <div id="programmingLanguage" class="shadow-md shadow-gray-600 rounded-2xl  w-2xs h-65 border-2 px-2.5 py-4.5 mx-2 sm:mx-2 my-2">
+        <div id="programmingLogo" class=" h-12 w-12 bg-linear-to-r from-blue-600 to-purple-600 rounded -xl"><img src="/codingLogo.png" class="overflow-hidden h-full w-full"></div>
+        <div id="programmingTools">
+          <div id="programmingHeading"><h1 class="text-black text-2xl font-medium ">Programming Language</h1></div>
+          <ul>
+            <li class="text-xl text-gray-500 mx-1.5">C</li>
+            <li class="text-xl text-gray-500 mx-1.5">Python</li>
+            <li class="text-xl text-gray-500 mx-1.5">Javascript</li>
+          </ul>
+        </div>
+      </div>
+      <div id="tools" class="shadow-md shadow-gray-600 rounded-2xl h-65 border-2 w-2xs px-2.5 py-4.5 mx-2 sm:mx-2 my-2 "><div id="toolsLogo" class=" h-12 w-12 bg-linear-to-r from-blue-600 to-purple-600 rounded -xl"><img src="/toolsLogo.png" class="overflow-hidden h-full w-full"></div>
+        <div id="toolsTools">
+          <div id="toolsHeading"><h1 class="text-black text-2xl font-medium">Tools</h1></div>
+          <ul>
+            <li class="text-xl text-gray-500 mx-1.5">Git</li>
+            <li class="text-xl text-gray-500 mx-1.5">VsCode</li>
+            <li class="text-xl text-gray-500 mx-1.5">Vercel</li>
+          </ul>
+        </div>
+      </div> -->
+    </div>
+  </div>
+  <div id="educationsPage" class="w-full h-auto flex flex-col justify-around items-center  py-20 bg-linear-to-br from-blue-50 via-white to-purple-50">
+    <div id="educationsHeading" class="flex flex-row justify-center items-center" ><h1 class="text-4xl font-bold ">Education</h1></div>
+    <div class="bg-linear-to-r from-blue-600 to-purple-600 w-30 h-1 flex flex-row justify-center items-center my-2"></div>
+    <div id="educations" class="flex flex-col justify-around items-center  h-auto w-full ">
+      <div id="secondary" class="shadow-md shadow-gray-600 rounded-2xl  border-2 px-12 py-4.5 sm:mx-2 my-2 flex flex-col justify-center items-center">
+        <div id="sLogo" class=" h-12 w-14 bg-linear-to-r from-blue-600 to-purple-600 rounded-full"><img src="/wbbseL.png" class="overflow-hidden h-full w-full"></div>
+        <div id="sContent" class="flex flex-col justify-center items-center">
+          <div class="text-2xl font-bold text-center">Secondary Education</div>
+          <div class="text-center text-gray-600">Sarada Vidyapith(H.S)</div>
+          <div class="text-center text-gray-600">Marks:86.14%</div>
+          <div class="text-center text-gray-600">Passout Year:2019</div>
+       
+          <div class="text-center text-gray-600">WBBSE</div>
+        </div>
+      </div>
+      <div id="higherSecondary" class="shadow-md shadow-gray-600 rounded-2xl   border-2 px-2.5 py-4.5 sm:mx-2 my-2 flex flex-col justify-center items-center">
+        <div id="hsLogo" class=" h-12 w-14 bg-linear-to-r from-blue-600 to-purple-600 rounded-full"><img src="/wbchseLogo.jpg" class="overflow-hidden h-full w-full"></div>
+        <div id="hsContent" class="flex flex-col justify-center items-center text-justify" >
+          <p class="text-2xl font-bold text-center">Higher Secondary Education</p>
+          <p class="text-center text-gray-600">Sarada Vidyapith(H.S)</p>
+          <p class="text-center text-gray-600">Marks:84%</p>
+          <p class="text-center text-gray-600">Passout Year:2021</p>
+          <p class="text-center text-gray-600">WBCHSE</p>
+        </div>
+      </div>
+     <div id="college" class="shadow-md shadow-gray-600 rounded-2xl  border-2 px-7.5 py-4.5 sm:mx-2 my-2 flex flex-col justify-center items-center">
+        <div id="cLogo" class=" h-13 w-15 rounded-full"><img src="/makautLogo.png" class="overflow-hidden h-full w-full"></div>
+        <div id="cContent" class="flex flex-col justify-center items-center ">
+          <p class="text-2xl font-bold text-center">Bachelor Education</p>
+          <p class="text-center text-gray-600">RCC Institute Of Information Technology</p>
+          <p class="text-center text-gray-600">Marks:78.4%</p>
+          <p class="text-center text-gray-600">Passout Year:2025</p>
+          <p class="text-center text-gray-600">MAKAUT</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="contactPage" class="w-full h-auto flex flex-col justify-center items-center  py-20 bg-linear-to-br from-blue-50 via-white to-purple-50">
+    <div id="contactHeading" class="flex flex-row justify-center items-center" ><h1 class="text-4xl font-bold ">Get In Touch</h1></div>
+    <div class="bg-linear-to-r from-blue-600 to-purple-600 w-30 h-1 flex flex-row justify-center items-center my-2"></div>
+    <div class="text-2xl text-gray-600">Have a project in mind or want to collaborate?Feel free to reach out!</div>
+    <div id="contactContent" class="flex flex-col justify-between items-center sm:flex-row sm:justify-between h-auto  ">
+      <div id="contactTo" class="flex flex-col justify-between items-start">
+        <div id="contactToHeading" class="text-black text-3xl flex flex-row justify-start items-center  my-4">Let's Talk</div>
+        <div id="contactToMessage" class=" text-gray-600 my-4 text-center">I'm always open to discusssing new projects,creative ideas or opportunity to be part of your vision.</div>
+        <div id="contactToInfo" class="flex flex-col justify-between items-start">
+          <div id="email" class="flex flex-row justify-center items-center my-2">
+            <div class="rounded-full h-10 w-10"><img src="/gmailLogo.png"></div>
+            <div class="cursor-pointer">purkaitsouvik531@gmail.com</div>
+          </div>
+          <div id="github" class="flex flex-row justify-center items-center my-2">
+            <div class="rounded-full h-10 w-10"><img src="/gitLogo.png"></div>
+            <div class="cursor-pointer">https://github.com/Souvik-code-ai</div>
+          </div>
+          <div id="linkedin" class="flex flex-row justify-center items-center my-2" >
+            <div class="rounded-full h-10 w-10"><img src="/linkedinLogo.jpg"></div>
+            <div class="cursor-pointer">https://www.linkedin.com/in/souvik-purkait-3b5a9727b/</div>
+          </div>
+        </div>
+      </div>
+      <div id="contactFrom" class="flex flex-col justify-between mx-4 mt-8">
+        <div id="contactFromInfo" class="flex flex-col justify-between items-center ">
+          <input type="text" placeholder="Enter Name" class="h-10 w-100 border-2 px-1.5 rounded-2xl mt-6"/>
+          <input type="text" placeholder="Enter Email Address" class="h-10 w-100 border-2 px-1.5 rounded-2xl mt-6"/>
+          <input type="text" placeholder="Enter Message" class="h-30 w-100 border-2 px-1.5 rounded-2xl mt-6  justify-start items-start pb-22" />
+        </div>
+        <div id="contactFromCommit" class="bg-linear-to-r h-10 w-100 from-blue-600 to-purple-600 flex flex-row justify-center  items-center text-justify text-amber-50  hover:shadow-blue-600 hover:shadow-2xl cursor-pointer rounded-2xl mt-4" >Send Message</div>
+      </div>
+    </div>
+  </div>
+  <div class="w-full h-auto flex flex-col justify-around items-center  py-20 bg-gray-800 text-amber-50">© 2025 Souvik Purkait.All rights reserved.</div>
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
   <script src="/script.js"></script>
 </body>
