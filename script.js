@@ -14,22 +14,33 @@ function showSideBar(){
     // let navButton=document.querySelector("#navDrawer");
     // navButton.style.display="none";
     // x=1;
-    showBar.classList.toggle("hidden");
-    let nav=document.querySelector("#navbar");
+    console.log("done");
+    // showBar.classList.toggle("hidden");
+    console.log("done");
+     let navButton=document.querySelector("#navDrawer");
+    // navButton.style.display="none";
+    
+    showBar.classList.remove("hidden");
+    navButton.classList.add("hidden");
 }
 
 function hideSideBar(){
-    let hideBar=document.querySelector("#option");
-    hideBar.style.display="hidden";
+    let hideBar=document.querySelector("#mobile-menu");
+    // hideBar.style.display="none";
+      let navButton=document.querySelector("#navDrawer");
+    // navButton.style.display="block";
+    
+    hideBar.classList.add("hidden");
+    navButton.classList.remove("hidden");
+   
 }
-function clickCloseButton(){
-    let removeOption=document.querySelector("#option");
-    removeOption.style.display="none";
-    let navButton=document.querySelector("#navDrawer");
-    navButton.style.display="block";
-    let closeButton=document.querySelector("#closeButton");
-    closeButton.style.display="none";
-}
+// function clickCloseButton(){
+//     let removeOption=document.querySelector("#option");
+//     removeOption.style.display="none";
+    
+//     let closeButton=document.querySelector("#closeButton");
+//     closeButton.style.display="none";
+// }
 // function showHomePage(){
 //     let navbar=document.querySelector("#option");
 //     navbar.style.display="none";
