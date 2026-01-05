@@ -10,28 +10,36 @@
 </head>
 
 <body class="bg-linear-to-br from-blue-50 via-white to-purple-50">
-  <nav
+  <nav id="navbar"
     class=" flex flex-row justify-between items-center h-auto w-full py-4 px-3 fixed top-0 left-0 right-0 bg-linear-to-br from-blue-50 via-white to-purple-50">
     <p
       class="bg-linear-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent text-4xl font-bold font-sans text-shadow-md">
-      resuvik...</p>
+      SP</p>
     <ul class="sm:flex sm:flex-row sm:justify-around sm:items-center sm:bg-amber-0 hidden " id="option">
-      <li class="mr-6 text-gray-700 hover:text-blue-600  font-medium "><a href="#homePage">Home</a></li>
-      <li class="mr-6 text-gray-700 hover:text-blue-600 font-medium"><a href="#skillsPage">Skills</a></li>
-      <li class="mr-6 text-gray-700 hover:text-blue-600  font-medium"><a href="#experiencePage">Experiences</a></li>
-      <li class="mr-6 text-gray-700 hover:text-blue-600  font-medium"><a href="#educationsPage">Educations</a></li>
-      <li class="mr-6 text-gray-700 hover:text-blue-600  font-medium"><a href="#contactPage">Contact</a></li>
+      <li class="mr-6 text-gray-700 hover:text-blue-600  font-medium " onclick=showHomePage()><a href="#homePage">Home</a></li>
+      <li class="mr-6 text-gray-700 hover:text-blue-600 font-medium" onclick=showSkillsPage()><a href="#skillsPage">Skills</a></li>
+      <li class="mr-6 text-gray-700 hover:text-blue-600  font-medium" onclick=showExperiencePage()><a href="#experiencePage">Experiences</a></li>
+      <li class="mr-6 text-gray-700 hover:text-blue-600  font-medium" onclick=showEducationPage()><a href="#educationsPage">Educations</a></li>
+      <li class="mr-6 text-gray-700 hover:text-blue-600  font-medium" onclick=showContactPage()><a href="#contactPage">Contact</a></li>
       <li class="hidden w-8 h-auto" onclick=hideSideBar()><img src="/close.png" /></li>
 
     </ul>
-    <div class="sm:hidden " onclick=showSideBar()><a href="#option"><img src="/icons8-xbox-menu-50.png"
-          class="w-8 h-auto"></a></div>
+    <ul id="mobile-menu" class="hidden md:hidden bg-white shadow-sm p-4  ">
+    <li><a href="#homePage" class="block">Home</a></li>
+    <li><a href="#skillsPage" class="block">Skills</a></li>
+    <li><a href="#experiencePage" class="block">Experiences</a></li>
+    <li><a href="#educationsPage" class="block">Educations</a></li>
+    <li><a href="#contactPage" class="block">Contact</a></li>
+  </ul>
+    <div class="sm:hidden " onclick=showSideBar() id="navDrawer"><img src="/icons8-xbox-menu-50.png"
+          class="w-8 h-auto"></div>
+    <div class="hidden w-8 h-auto " id="closeButton" onclick=clickCloseButton()><img src="/close.png"></div>
   </nav>
   <div id="homePage"
-    class=" md:flex-row md:justify-center md:items-center flex flex-col-reverse justify-center items-center my-8 mx-10 py-20 bg-linear-to-br from-blue-50 via-white to-purple-50">
+    class=" md:flex-row md:justify-center md:items-center flex flex-col-reverse justify-center items-center my-3 sm:my-8 mx-10 py-5 sm:py-20 bg-linear-to-br from-blue-50 via-white to-purple-50">
     <div class="px-4 flex flex-col justify-center items-center">
       <p class="  text-gray-700 text-2xl font-medium mb-1.5">Hi,Myself</p>
-      <p class=" text-black text-4xl font-bold  mb-1.5">Souvik Purkait</p>
+      <p class=" text-black text-2xl sm:text-4xl font-bold  mb-1.5">Souvik Purkait</p>
       <p class="  text-gray-700 text-2xl font-medium mb-1.5">I'm a <span id="role"
           class="bg-linear-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent"></span></p>
       <p class="text-gray-500 text-xl text-justify">To secure a responsible career
@@ -66,9 +74,9 @@
     <div class=""><img src="/profile.jpeg" class="h-auto w-2xl overflow-hidden rounded-3xl" /></div>
   </div>
   <div id="skillsPage"
-    class="w-full h-auto flex flex-col justify-around items-center  py-20 bg-linear-to-br from-blue-50 via-white to-purple-50">
-    <div id="skillsHeading" class="flex flex-row justify-center items-center">
-      <h1 class="text-4xl font-bold ">Skills & Expertise</h1>
+    class=" flex md:flex-col md:justify-center md:items-center flex-col justify-center items-center  py-5 sm:py-20 mx-10 bg-linear-to-br my-3 sm:my-8 from-blue-50 via-white to-purple-50">
+    <div id="skillsHeading" class="flex flex-row justify-center items-center"> 
+      <h1 class="text-2xl md:text-3xl lg:text-4xl font-bold ">Skills & Expertise</h1>
     </div>
     <div class="bg-linear-to-r from-blue-600 to-purple-600 w-30 h-1 flex flex-row justify-center items-center my-2">
     </div>
@@ -124,20 +132,20 @@
     </div>
   </div>
   <div id="experiencePage"
-    class="w-full h-auto flex flex-col justify-around items-center  py-20 bg-linear-to-br from-blue-50 via-white to-purple-50">
+    class="flex md:flex-col md:justify-center md:items-center flex-col justify-center items-center  py-5 sm:py-20 mx-10 bg-linear-to-br my-3 sm:my-8 from-blue-50 via-white to-purple-50">
     <div id="experienceHeading" class="flex flex-row justify-center items-center">
-      <h1 class="text-4xl font-bold ">Experiences</h1>
+      <h1 class="text-2xl md:text-3xl lg:text-4xl font-bold ">Experiences</h1>
     </div>
     <div class="bg-linear-to-r from-blue-600 to-purple-600 w-30 h-1 flex flex-row justify-center items-center my-2">
     </div>
     <div id="experiences"
       class="flex flex-col justify-around items-center  h-auto md:flex-row md:justify-center md:items-center">
       <div id="broadifi"
-        class="shadow-md shadow-gray-600 rounded-2xl  w-90 h-auto border-2 px-2.5 py-4 sm:mx-2 my-2 flex flex-col justify-center ">
+        class="shadow-md shadow-gray-600 rounded-2xl  w-2xs sm:w-90 h-auto border-2 px-2.5 py-4 sm:mx-2 my-2 flex flex-col justify-center ">
         <div id="broadifiLogo" class=" h-58 w-full bg-linear-to-r from-blue-600 to-purple-600 rounded -xl border-2"><img
             src="/btlogo.jpg" class="overflow-hidden h-full w-full"></div>
         <div id="broadifiPost" class="flex flex-row justify-between items-center">
-          <span class="text-xl  text-justify  text-black font-bold">Javascript Intern</span>
+          <span class="text-base sm:text-xl  text-justify  text-black font-bold ">Javascript Intern</span>
           <span>6<sup>th</sup>Oct,25-6<sup>th</sup>Jan,26</span>
         </div>
         <div id="broadifiObjective" class="text-justify text-gray-500">Assist in developing and debugging web
@@ -147,22 +155,22 @@
           control systems.</div>
         <div id="broadifiSkills" class="flex flex-row justify-between items-center">
           <div
-            class="rounded-2xl  bg-linear-to-r from-blue-600 to-purple-600 text-amber-50 w-15 flex flex-row justify-center items-center">
+            class="rounded-2xl  bg-linear-to-r from-blue-600 to-purple-600 text-amber-50 w-15 flex flex-row justify-center items-center py-2 px-3.5">
             React</div>
           <div
-            class="rounded-2xl  bg-linear-to-r from-blue-600 to-purple-600 text-amber-50 w-25 flex flex-row justify-center items-center">
+            class="rounded-2xl  bg-linear-to-r from-blue-600 to-purple-600 text-amber-50 w-25 flex flex-row justify-center items-center py-2 px-1.5">
             Tailwind CSS</div>
           <div
-            class="rounded-2xl  bg-linear-to-r from-blue-600 to-purple-600 text-amber-50 w-20 flex flex-row justify-center items-center">
+            class="rounded-2xl  bg-linear-to-r from-blue-600 to-purple-600 text-amber-50 w-20 flex flex-row justify-center items-center py-2 px-3.5">
             Javascript</div>
         </div>
       </div>
       <div id="broadifi"
-        class="shadow-md shadow-gray-600 rounded-2xl  w-90 h-auto border-2 px-2.5 py-4 sm:mx-2 my-2 flex flex-col justify-center ">
+        class="shadow-md shadow-gray-600 rounded-2xl  w-2xs sm:w-90 h-auto border-2 px-2.5 py-4 sm:mx-2 my-2 flex flex-col justify-center ">
         <div id="broadifiLogo" class=" h-64 w-full bg-linear-to-r from-blue-600 to-purple-600 rounded -xl border-2"><img
             src="/cipherbyteLogo.jpg" class="overflow-hidden h-full w-full"></div>
         <div id="broadifiPost" class="flex flex-row justify-between items-center">
-          <span class="text-xl  text-justify  text-black font-bold">Python Intern</span>
+          <span class="text-base sm:text-xl   text-justify  text-black font-bold">Python Intern</span>
           <span>Jun,24</span>
         </div>
         <div id="broadifiObjective" class="text-justify  text-gray-500">Developed and optimized Python scripts for
@@ -170,10 +178,10 @@
           processing tasks, improving efficiency and reducing manual effort.</div>
         <div id="broadifiSkills" class="flex flex-row justify-around items-center">
           <div
-            class="rounded-2xl  bg-linear-to-r from-blue-600 to-purple-600 text-amber-50 w-15 flex flex-row justify-center items-center">
+            class="rounded-2xl  bg-linear-to-r from-blue-600 to-purple-600 text-amber-50 w-15 flex flex-row justify-center items-center py-2 px-3.5 ">
             Python</div>
           <div
-            class="rounded-2xl  bg-linear-to-r from-blue-600 to-purple-600 text-amber-50 w-30 flex flex-row justify-center items-center">
+            class="rounded-2xl  bg-linear-to-r from-blue-600 to-purple-600 text-amber-50 w-30 flex flex-row justify-center items-center py-2 px-3.5">
             Programming</div>
         </div>
       </div>
@@ -201,9 +209,9 @@
     </div>
   </div>
   <div id="educationsPage"
-    class="w-full h-auto flex flex-col justify-around items-center  py-20 bg-linear-to-br from-blue-50 via-white to-purple-50">
+    class="flex md:flex-col md:justify-center md:items-center flex-col justify-center items-center  py-5 sm:py-20 mx-10 bg-linear-to-br my-3 sm:my-8 from-blue-50 via-white to-purple-50">
     <div id="educationsHeading" class="flex flex-row justify-center items-center">
-      <h1 class="text-4xl font-bold ">Education</h1>
+      <h1 class="text-2xl md:text-3xl lg:text-4xl font-bold ">Education</h1>
     </div>
     <div class="bg-linear-to-r from-blue-600 to-purple-600 w-30 h-1 flex flex-row justify-center items-center my-2">
     </div>
@@ -248,37 +256,37 @@
     </div>
   </div>
   <div id="contactPage"
-    class="w-full h-auto flex flex-col justify-center items-center  py-20 bg-linear-to-br from-blue-50 via-white to-purple-50">
+    class="flex md:flex-col md:justify-center md:items-center flex-col justify-center items-center  py-5 sm:py-20 mx-10 bg-linear-to-br my-3 sm:my-8 from-blue-50 via-white to-purple-50">
     <div id="contactHeading" class="flex flex-row justify-center items-center">
-      <h1 class="text-4xl font-bold ">Get In Touch</h1>
+      <h1 class="text-2xl md:text-3xl lg:text-4xl font-bold ">Get In Touch</h1>
     </div>
     <div class="bg-linear-to-r from-blue-600 to-purple-600 w-30 h-1 flex flex-row justify-center items-center my-2">
     </div>
     <div class="text-2xl text-gray-600 text-center">Have a project in mind or want to collaborate?Feel free to reach
       out!</div>
     <div id="contactContent" class="flex flex-col justify-between items-center sm:flex-row sm:justify-between h-auto  ">
-      <div id="contactTo" class="flex flex-col justify-between items-center sm:items-start ">
+      <div id="contactTo" class="flex flex-col justify-between items-center sm:items-start">
         <div id="contactToHeading" class="text-black text-3xl pl-3 sm:pl-0 ">Let's Talk</div>
 
-        <div id="contactToMessage" class=" text-gray-600 my-4 text-center">I'm always open to discusssing new
+        <div id="contactToMessage" class=" text-gray-600 my-4 text-0.5xl text-center ">I'm always open to discusssing new
           projects,creative ideas or opportunity to be part of your vision.</div>
-        <div id="contactToInfo" class="flex flex-col justify-between items-center sm:items-start">
+        <div id="contactToInfo" class="flex flex-row justify-center sm:justify-end  sm:flex-col ">
 
-          <div id="email" class="flex flex-row justify-center items-center my-2">
+          <div id="email" class="flex flex-row justify-center items-center my-2 mx-1.5 sm:mx-0">
             <div class="rounded-full h-10 w-10"><img src="/gmailLogo.png"></div>
-            <div class="cursor-pointer">purkaitsouvik531@gmail.com</div>
+            <div class="cursor-pointer text-sm sm:text-base md:text-lg">Email</div>
           </div>
 
-          <div id="github" class="flex flex-row justify-center items-center my-2">
+          <div id="github" class="flex flex-row justify-center items-center my-2 sm:ml-1 mx-1.5 sm:mx-0">
             <div class="rounded-full h-10 w-10"><img src="/gitLogo.png"></div>
-            <div class="cursor-pointer"><a href="https://github.com/Souvik-code-ai"
-                target="__main__">https://github.com/Souvik-code-ai</a></div>
+            <div class="cursor-pointer text-sm sm:text-base md:text-lg"><a href="https://github.com/Souvik-code-ai"
+                target="__main__">Github</a></div>
           </div>
 
-          <div id="linkedin" class="flex flex-row justify-center items-center my-2">
+          <div id="linkedin" class="flex flex-row justify-center items-center my-2 sm:ml-3 mx-1.5 sm:mx-0">
             <div class="rounded-full h-10 w-10"><img src="/linkedinLogo.jpg"></div>
-            <div class="cursor-pointer"><a href="https://www.linkedin.com/in/souvik-purkait-3b5a9727b/"
-                target="__main__">https://www.linkedin.com/in/souvik-purkait-3b5a9727b/</a></div>
+            <div class="cursor-pointer text-sm sm:text-base md:text-lg"><a href="https://www.linkedin.com/in/souvik-purkait-3b5a9727b/"
+                target="__main__">Linkedin</a></div>
           </div>
 
         </div>
@@ -286,14 +294,14 @@
       <div id="contactFrom" class="flex flex-col justify-between mx-4 mt-8">
 
         <div id="contactFromInfo" class="flex flex-col justify-between items-center ">
-          <input type="text" placeholder="Enter Name" class="h-10 w-100 border-2 px-1.5 rounded-2xl mt-6 text-left" />
-          <input type="text" placeholder="Enter Email Address" class="h-10 w-100 border-2 px-1.5 rounded-2xl mt-6" />
+          <input type="text" placeholder="Enter Name" class="h-10 w-full border-0 px-1.5 rounded-2xl mt-6 " />
+          <input type="text" placeholder="Enter Email Address" class="h-10 w-full border-0 px-1.5 rounded-2xl mt-6" />
           <input type="text" placeholder="Enter Message"
-            class="h-30 w-100 border-2 px-1.5 rounded-2xl mt-6  justify-start items-start pb-22" />
+            class="h-30 w-full border-0 px-1.5 rounded-2xl mt-6  justify-start items-start pb-22" />
         </div>
 
         <div id="contactFromCommit"
-          class="bg-linear-to-r h-10 w-100 from-blue-600 to-purple-600 flex flex-row justify-center  items-center text-justify text-amber-50  hover:shadow-blue-600 hover:shadow-2xl cursor-pointer rounded-2xl mt-4">
+          class="bg-linear-to-r w-11/12 from-blue-600 to-purple-600 flex flex-row justify-center  items-center text-justify text-amber-50  hover:shadow-blue-600 hover:shadow-2xl cursor-pointer rounded-2xl mt-4">
           Send Message
         </div>
 
@@ -301,7 +309,7 @@
       </div>
     </div>
   </div>
-  <div class="w-full h-auto flex flex-col justify-around items-center  py-20 bg-gray-800 text-amber-50">© 2026 Souvik
+  <div class="w-full h-auto flex flex-col justify-around items-center  py-20 mt-2.5 sm:mt-0 bg-gray-800 text-amber-50">© 2026 Souvik
     Purkait.All rights reserved.</div>
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
   <script src="/script.js"></script>

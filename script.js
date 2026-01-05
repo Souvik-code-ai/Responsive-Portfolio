@@ -5,11 +5,81 @@ var roleSwitch=new Typed("#role",{
     backDelay:100,
     loop:true
 })
+let x,y;
 function showSideBar(){
-    let showBar=document.querySelector("#option");
-    showBar.style.display="block";
+    let showBar=document.querySelector("#mobile-menu");
+    // showBar.style.display="block";
+    // let closeButton=document.querySelector("#closeButton");
+    // closeButton.style.display="block";
+    // let navButton=document.querySelector("#navDrawer");
+    // navButton.style.display="none";
+    // x=1;
+    showBar.classList.toggle("hidden");
+    let nav=document.querySelector("#navbar");
 }
+
 function hideSideBar(){
     let hideBar=document.querySelector("#option");
     hideBar.style.display="hidden";
 }
+function clickCloseButton(){
+    let removeOption=document.querySelector("#option");
+    removeOption.style.display="none";
+    let navButton=document.querySelector("#navDrawer");
+    navButton.style.display="block";
+    let closeButton=document.querySelector("#closeButton");
+    closeButton.style.display="none";
+}
+// function showHomePage(){
+//     let navbar=document.querySelector("#option");
+//     navbar.style.display="none";
+//     let navDrawer=document.querySelector("#navDrawer");
+//     navDrawer.style.display="block";
+//     let hideCloseButton=document.querySelector("#closeButton");
+//     hideCloseButton.style.display="none";
+// }
+// function showSkillsPage(){
+//     let navbar=document.querySelector("#option");
+//     navbar.style.display="none";
+//     let navDrawer=document.querySelector("#navDrawer");
+//     navDrawer.style.display="block";
+//     let hideCloseButton=document.querySelector("#closeButton");
+//     hideCloseButton.style.display="none";
+// }
+// function showExperiencePage(){
+//     let navbar=document.querySelector("#option");
+//     navbar.style.display="none";
+//     let navDrawer=document.querySelector("#navDrawer");
+//     navDrawer.style.display="block";
+//     let hideCloseButton=document.querySelector("#closeButton");
+//     hideCloseButton.style.display="none";
+// }
+// function showEducationPage(){
+//     let navbar=document.querySelector("#option");
+//     navbar.style.display="none";
+//     let navDrawer=document.querySelector("#navDrawer");
+//     navDrawer.style.display="block";
+//     let hideCloseButton=document.querySelector("#closeButton");
+//     hideCloseButton.style.display="none";
+// }
+// function showContactPage(){
+//     let navbar=document.querySelector("#option");
+//     navbar.style.display="none";
+//     let navDrawer=document.querySelector("#navDrawer");
+//     navDrawer.style.display="block";
+//     let hideCloseButton=document.querySelector("#closeButton");
+//     hideCloseButton.style.display="none";
+// }
+// // if(x===1 && y===1){
+// //     let navbar=document.querySelector("#option");
+// //     navbar.style.display="none";
+// //     let navDrawer=document.querySelector("#navDrawer");
+// //     navDrawer.style.display="block";
+// //     let hideCloseButton=document.querySelector("#closeButton");
+// //     hideCloseButton.style.display="none";
+// //     x=0;
+// //     y=0;
+// //     console.log("done");
+
+// // }
+// // console.log(x,y);
