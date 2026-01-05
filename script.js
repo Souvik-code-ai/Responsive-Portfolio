@@ -9,3 +9,7 @@ function showSideBar(){
     let showBar=document.querySelector("#option");
     showBar.style.display="block";
 }
+function hideSideBar(){
+    let hideBar=document.querySelector("#option");
+    hideBar.style.display="hidden";
+}
