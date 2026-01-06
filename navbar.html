@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="./src/output.css" rel="stylesheet"> -->
+</head>
+<body class="bg-linear-to-br from-blue-50 via-white to-purple-50">
+    <nav id="navbar"
+    class=" flex flex-row justify-between items-center h-auto w-full py-2 sm:py-4 px-3 fixed top-0 left-0 right-0 bg-linear-to-br from-blue-50 via-white to-purple-50">
+    <p
+      class="bg-linear-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent text-4xl font-bold font-sans text-shadow-md">
+      SP</p>
+    <ul class="sm:flex sm:flex-row sm:justify-around sm:items-center sm:bg-amber-0 hidden " id="option">
+      <li class="mr-6 text-gray-700 hover:text-blue-600  font-medium " onclick=showHomePage()><a
+          href="#homePage">Home</a></li>
+      <li class="mr-6 text-gray-700 hover:text-blue-600 font-medium" onclick=showSkillsPage()><a
+          href="#skillsPage">Skills</a></li>
+      <li class="mr-6 text-gray-700 hover:text-blue-600  font-medium" onclick=showExperiencePage()><a
+          href="#experiencePage">Experiences</a></li>
+      <li class="mr-6 text-gray-700 hover:text-blue-600  font-medium" onclick=showEducationPage()><a
+          href="#educationsPage">Educations</a></li>
+      <li class="mr-6 text-gray-700 hover:text-blue-600  font-medium" onclick=showContactPage()><a
+          href="#contactPage">Contact</a></li>
+      
+
+    </ul>
+    <ul id="mobile-menu" class="hidden md:hidden absolute right-0.5 top-15 w-9/12 space-y-8 bg-linear-to-r from-blue-600 to-purple-600 opacity-100 rounded-2xl text-left h-auto pl-3 py-2 ">
+      <li><a href="#homePage" class="text-base text-white">Home</a></li>
+      <li><a href="#skillsPage" class="text-base text-white">Skills</a></li>
+      <li><a href="#experiencePage" class="text-base text-white">Experiences</a></li>
+      <li><a href="#educationsPage" class="text-base text-white">Educations</a></li>
+      <li><a href="#contactPage" class="text-base text-white">Contact</a></li>
+    </ul>
+    <div class="sm:hidden " onclick=showSideBar() id="navDrawer"><img src="/icons8-xbox-menu-50.png" class="w-6 h-6">
+    </div>
+    <div class="hidden" id="closeButton" onclick=hideSideBar()><img src="/close.png" class="w-5 h-5"></div>
+  </nav>
+  
+</body>
+</html>

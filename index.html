@@ -10,7 +10,41 @@
 </head>
 
 <body class="bg-linear-to-br from-blue-50 via-white to-purple-50">
-  <nav id="navbar"
+  <div id="navbar"></div>
+  <div id="home"></div>
+  <div id="skill"></div>
+  <div id="experience"></div>
+  <div id="education"></div>
+  <div id="contact"></div>
+  <div id="footer"></div>
+  <script>
+    fetch("/navbar.html")
+      .then(res => res.text())
+      .then(data => document.getElementById("navbar").innerHTML = data);
+    fetch("/homePage.html")
+      .then(res => res.text())
+      .then(data => document.getElementById("home").innerHTML = data);
+    fetch("/skillPage.html")
+      .then(res => res.text())
+      .then(data => document.getElementById("skill").innerHTML = data);
+    fetch("/experience.html")
+      .then(res => res.text())
+      .then(data => document.getElementById("experience").innerHTML = data);
+    fetch("/education.html")
+      .then(res => res.text())
+      .then(data => document.getElementById("education").innerHTML = data);
+    fetch("/contact.html")
+      .then(res => res.text())
+      .then(data => document.getElementById("contact").innerHTML = data);
+    fetch("/footer.html")
+      .then(res => res.text())
+      .then(data => document.getElementById("footer").innerHTML = data);
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="/script.js"></script>
+</body>
+</html>
+  <!-- <nav id="navbar"
     class=" flex flex-row justify-between items-center h-auto w-full py-2 sm:py-4 px-3 fixed top-0 left-0 right-0 bg-linear-to-br from-blue-50 via-white to-purple-50">
     <p
       class="bg-linear-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent text-4xl font-bold font-sans text-shadow-md">
@@ -35,13 +69,12 @@
       <li><a href="#experiencePage" class="text-base text-white">Experiences</a></li>
       <li><a href="#educationsPage" class="text-base text-white">Educations</a></li>
       <li><a href="#contactPage" class="text-base text-white">Contact</a></li>
-      <!-- <li class=" w-8 h-auto" onclick=hideSideBar()><img src="/close.png" /></li> -->
     </ul>
     <div class="sm:hidden " onclick=showSideBar() id="navDrawer"><img src="/icons8-xbox-menu-50.png" class="w-6 h-6">
     </div>
     <div class="hidden" id="closeButton" onclick=hideSideBar()><img src="/close.png" class="w-5 h-5"></div>
-  </nav>
-  <div id="homePage"
+  </nav> -->
+  <!-- <div id="homePage"
     class=" md:flex-row md:justify-center md:items-center flex flex-col-reverse justify-center items-center my-3 sm:my-8 mx-10 py-5 sm:py-20 bg-linear-to-br from-blue-50 via-white to-purple-50">
     <div class="px-4 flex flex-col justify-center items-center">
       <p class="  text-gray-700 text-2xl sm:text-3xl font-medium my-1.5">Hi,Myself</p>
@@ -191,27 +224,7 @@
             Programming</div>
         </div>
       </div>
-      <!-- <div id="programmingLanguage" class="shadow-md shadow-gray-600 rounded-2xl  w-2xs h-65 border-2 px-2.5 py-4.5 mx-2 sm:mx-2 my-2">
-        <div id="programmingLogo" class=" h-12 w-12 bg-linear-to-r from-blue-600 to-purple-600 rounded -xl"><img src="/codingLogo.png" class="overflow-hidden h-full w-full"></div>
-        <div id="programmingTools">
-          <div id="programmingHeading"><h1 class="text-black text-2xl font-medium ">Programming Language</h1></div>
-          <ul>
-            <li class="text-xl text-gray-500 mx-1.5">C</li>
-            <li class="text-xl text-gray-500 mx-1.5">Python</li>
-            <li class="text-xl text-gray-500 mx-1.5">Javascript</li>
-          </ul>
-        </div>
-      </div>
-      <div id="tools" class="shadow-md shadow-gray-600 rounded-2xl h-65 border-2 w-2xs px-2.5 py-4.5 mx-2 sm:mx-2 my-2 "><div id="toolsLogo" class=" h-12 w-12 bg-linear-to-r from-blue-600 to-purple-600 rounded -xl"><img src="/toolsLogo.png" class="overflow-hidden h-full w-full"></div>
-        <div id="toolsTools">
-          <div id="toolsHeading"><h1 class="text-black text-2xl font-medium">Tools</h1></div>
-          <ul>
-            <li class="text-xl text-gray-500 mx-1.5">Git</li>
-            <li class="text-xl text-gray-500 mx-1.5">VsCode</li>
-            <li class="text-xl text-gray-500 mx-1.5">Vercel</li>
-          </ul>
-        </div>
-      </div> -->
+    
     </div>
   </div>
   <div id="educationsPage"
@@ -318,9 +331,8 @@
   </div>
   <div class="w-full h-auto flex flex-col justify-around items-center  py-20 mt-2.5 sm:mt-0 bg-gray-800 text-amber-50">©
     2026 Souvik
-    Purkait.All rights reserved.</div>
-  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-  <script src="/script.js"></script>
-</body>
-
-</html>
+    Purkait.All rights reserved.</div> -->
+    
+  
+  <!-- <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="/script.js"></script> -->
