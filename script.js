@@ -17,21 +17,25 @@ function showSideBar(){
     console.log("done");
     // showBar.classList.toggle("hidden");
     console.log("done");
+     let closeButton=document.querySelector("#closeButton");
      let navButton=document.querySelector("#navDrawer");
+     navButton.classList.add("hidden");
     // navButton.style.display="none";
     
     showBar.classList.remove("hidden");
-    navButton.classList.add("hidden");
+    closeButton.classList.remove("hidden");
 }
 
 function hideSideBar(){
-    let hideBar=document.querySelector("#mobile-menu");
+    let navDrawer=document.querySelector("#mobile-menu");
+    let navButton=document.querySelector("#navDrawer");
     // hideBar.style.display="none";
-      let navButton=document.querySelector("#navDrawer");
+      let closeButton=document.querySelector("#closeButton");
     // navButton.style.display="block";
     
-    hideBar.classList.add("hidden");
     navButton.classList.remove("hidden");
+    navDrawer.classList.add("hidden");
+    closeButton.classList.add("hidden");
    
 }
 // function clickCloseButton(){
